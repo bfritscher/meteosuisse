@@ -1,0 +1,10 @@
+<div id="map">
+<img src="img/map_small.jpeg" />
+<img style="opacity:0.6" ng-src="data/{{pics[currentPosition]}}" />
+<div id="label" ng-bind="currentDate()"></div>
+</div>
+<div>
+	<input class="slider" type="range" min="0" max="{{pics.length-1}}" step="1" ng-model="currentPosition"/>
+</div>
+<div><img src="img/scale.jpg" /></div>
+<div>&copy; MétéoSuisse</div>
